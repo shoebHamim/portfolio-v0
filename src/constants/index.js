@@ -8,3 +8,10 @@ export const words=[
   {text:'Designs',imgPath:'/images/designs.svg'},
   {text:'Code',imgPath:'/images/code.svg'}
 ]
+
+export const counterItems=[
+  {value:3, suffix:"+",label:"Years of Experience"},
+  {value:20, suffix:"+",label:"Completed Projects"},
+  {value:40, suffix:"+",label:"Problem solved on LeetCode"},
+
+]

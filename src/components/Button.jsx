@@ -1,27 +1,26 @@
 
 import React from 'react'
 
-const Button = ({text,className,id}) => {
+const Button = ({ text, className, id }) => {
   return (
-    <a onClick={(e)=>{
+    <a onClick={(e) => {
       e.preventDefault()
-      const target=document.getElementById('counter')
-      if(target&&id){
-        const offset=window.innerHeight*.15;
+      const target = document.getElementById('counter')
+      if (target && id) {
+        const offset = window.innerHeight * .15;
 
-        const top=target.getBoundingClientRect().top+window.scrollY-offset;
-        window.scrollTo({top,behavior:'smooth'})
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' })
 
       }
-    }} className={`${className??''} cta-wrapper`}>
+    }} className={`${className ?? ''} cta-wrapper`}>
       <div className="cta-button group">
         <div className="bg-circle">
         </div>
-          <p className="text">{text}</p>
-          <div className="arrow-wrapper">
-            <img src="/images/arrow-down.svg" alt="arrow" />
-          </div>
-
+        <p className="text">{text}</p>
+        <div className="arrow-wrapper">
+          <img src="/images/arrow-down.svg" alt="arrow" />
+        </div>
       </div>
     </a>
   )
