@@ -15,3 +15,9 @@ export const counterItems=[
   {value:40, suffix:"+",label:"Problem solved on LeetCode"},
 
 ]
+export const navLinks=[
+  {name:'Work',link:'#work'},
+  {name:'Experience',link:'#experience'},
+  {name:'Skills',link:'#skills'},
+  {name:'Testimonial',link:'#Testimonial'},
+]
