@@ -16,7 +16,7 @@ const HeroExperience = () => {
    <HeroLights/>
    <Particles></Particles>
     <OrbitControls enablePan={false}
-    enableZoom={isDesktop}
+    enableZoom={false}
     maxDistance={20}
     minDistance={5}
     minPolarAngle={Math.PI/5}
